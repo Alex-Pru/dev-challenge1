@@ -10,12 +10,11 @@
     box-sizing: border-box;
     background-color: var(--black);
     font-size: 62.5%;
-    color: white;
 }
 
-header{
+.container-header{
     width: 100%;
-    height: 10%;
+    height: 30%;
     display: flex;
     padding: 6rem 8rem;
     justify-content: space-between;
@@ -25,16 +24,71 @@ header{
     font-size: 3.5rem;
     font-family: 'Uncial Antiqua', cursive;
     letter-spacing: 2px;
+    color: white;
 }
 
-.header-nav-list{
+.headernavlist{
     list-style: none;
     display: flex;
-    gap: 8rem;
+    gap: 6rem;
 }
 
-.header-nav-list-button{
+.headerbutton{
+    text-decoration: none;
+    
+    color: white;
+}
+
+a{
+    color: white;
     text-decoration: none;
     font-size: 2.5rem;
     font-family: 'poppins';
+}
+
+.icon{
+    display: none;
+}
+
+@media screen and (max-width:950px) {
+    .headernavlist li:not(:last-child){
+        display: none;
+    }
+    .icon{
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        float: right;
+        color: white;
+        font-size: 2.5rem;
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .container-header{
+        justify-content: space-between;
+        padding: 2rem 2rem 0rem 2rem;
+        flex-direction: column;
+    }
+    .headernavlist.responsive{
+        position: relative;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .headernavlist.responsive li:not(:last-child){
+        display: block;
+        text-align: left;
+        float: none;    
+    }
+    .headernavlist.responsive a.icon{
+        position: absolute;
+        float: right;
+        top: -5rem;
+        right: 1rem;
+        background-color: transparent;
+        
+
+    }
 }

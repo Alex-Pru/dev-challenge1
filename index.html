@@ -1,26 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
     <title>Projeto</title>
 </head>
 <body>
     <main>
-        <header>
+        <header class="container-header">
             <h1 class="name">RichardX</h1>
             <nav class="header-nav">
-                <ul class="header-nav-list">
-                    <li><a href="#home" class="header-nav-list-button">Home</a></li>
-                    <li><a href="#services" class="header-nav-list-button">Services</a></li>
-                    <li><a href="#blog" class="header-nav-list-button">Blog</a></li>
-                    <li><a href="#contact" class="header-nav-list-button">Contact</a></li>
+                <ul class="headernavlist"   id="menu">
+                    <li class="headerbutton"><a href="#home">Home</a></li>
+                    <li class="headerbutton"><a href="#services">Services</a></li>
+                    <li class="headerbutton"><a href="#blog">Blog</a></li>
+                    <li class="headerbutton"><a href="#contact">Contact</a></li>
+                    <li ><a href="javascript:void(0);" class="icon" onclick="myfunction()"><i class="fa fa-bars"></i></a></li>
                 </ul>
             </nav>
         </header>
         
         </section>
     </main>
+
+    <script> function myfunction(){
+        var x = document.getElementById("menu");
+        if (x.className === "headernavlist") {
+            x.className += " responsive";
+        } else {
+            x.className = "headernavlist";
+        }
+    } </script>
+
 </body>
+
 </html>
