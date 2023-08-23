@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Uncial+Antiqua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap');
+
 :root{
     --black: #0D0F15;
 }
@@ -39,7 +41,7 @@
     color: white;
 }
 
-a{
+.header-link{
     color: white;
     text-decoration: none;
     font-size: 2.5rem;
@@ -99,27 +101,77 @@ a{
     grid-template-columns: 1fr 1fr;
     width: 100%;
     height: 80vh;
-    overflow: hidden;
     justify-items: center;
     align-items: center;
 }
 
 .home-child1{
-    width: 40%;
-    height: 50%;
+    width: 100%;
+    height: 80%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    
     flex-direction: column;
+    padding-left: 8rem;
+    
 }
 
 .home-child2{
-    width: 40%;
-    height: 50%;
-    overflow: hidden;
+    width: auto;
+    height: 100%;
+    
 }
 
 .big-text{
-    font-size: 9rem;
+    font-size: 7rem;
     color: white;
+    width: 100%;
+    font-family: 'Syne', sans-serif;
+    
+}
+
+.tiny-text{
+    font-size: 2.5rem;
+    color: white;
+    width: 100%;
+    font-family: 'syne', sans-serif;
+}
+
+.smaller-text{
+    font-size: 1.5rem;
+    font-family: 'syne', sans-serif;
+    color: #868A9B;
+    margin-top: 2rem;
+}
+
+.dw-button{
+    width: 35%;
+    font-size: 1.5rem;
+    display: inline-flex;
+    border: solid 0.2rem white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    height: 5rem;
+    font-family: 'syne', sans-serif;
+    margin-top: 5rem;
+    font-weight: normal;
+}
+
+.dw-icon{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+}
+
+.rich-img{
+    width: 5rem;
+    height: 6rem;
+}
+
+.red-circle1{
+    width: 5rem;
+    height: 5rem;
 }
