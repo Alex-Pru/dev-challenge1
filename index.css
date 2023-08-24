@@ -4,6 +4,7 @@
 
 :root{
     --black: #0D0F15;
+    --grey: #181A21;
 }
 
 *{
@@ -129,7 +130,9 @@
 .big-text{
     font-size: 7rem;
     color: white;
-    width: 90%;
+    padding: 0;
+    margin: 0;
+    background: none;
     font-family: 'Syne', sans-serif;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -139,13 +142,16 @@
 .tiny-text{
     font-size: 2.5rem;
     color: white;
-    width: 100%;
+   padding: 0;
+   margin: 0;
+   background-color: transparent;
+   background: none;
     font-family: 'syne', sans-serif;
 }
 
 .smaller-text{
     font-size: 1.5rem;
-    width: 70%;
+    
     font-family: 'syne', sans-serif;
     color: #868A9B;
     margin: 2rem 0 0 0;
@@ -153,7 +159,6 @@
 
 .smaller-text1{
     font-size: 1.5rem;
-    width: 70%;
     font-family: 'syne', sans-serif;
     color: #868A9B;
     margin: 0 0 0 0;
@@ -191,3 +196,25 @@
     height: 50rem;
 }  
 /* End of the Eye Catcher Page */
+
+/* Start of the Tiny Section */
+
+.tiny-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 25vh;
+    background-color: var(--grey);
+    align-items: center;
+    text-align: center;
+    
+}
+
+.tiny-section-child{
+    background-color: var(--grey);
+
+}
+
+.tiny-section-child:first-child{
+    padding-left: 2rem;
+}
