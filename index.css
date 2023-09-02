@@ -54,14 +54,14 @@
 }
 
 @media screen and (max-width:950px) {
-    .headernavlist li:not(:last-child){
+    .headernavlist li{
         display: none;
     }
     .icon{
         display: block;
         position: absolute;
-        top: 2rem;
-        right: 2rem;
+        top: 10;
+        right: 0;
         float: right;
         color: white;
         font-size: 2.5rem;
@@ -88,8 +88,8 @@
     .headernavlist.responsive a.icon{
         position: absolute;
         float: right;
-        top: -5rem;
-        right: 1rem;
+        top: 0;
+        right: 0;
         background-color: transparent;
         
 
