@@ -167,7 +167,7 @@
 .dw-button{
     width: 35%;
     font-size: 1.5rem;
-    display: inline-flex;
+    display: block;
     border: solid 0.2rem white;
     text-align: center;
     justify-content: center;
@@ -178,6 +178,7 @@
     font-family: 'syne', sans-serif;
     margin-top: 5rem;
     font-weight: normal;
+    cursor: pointer;
 }
 
 .dw-icon{
